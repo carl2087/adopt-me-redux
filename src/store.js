@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import adoptedPetSlice from "./adoptedPetSlice";
+import adoptedPet from "./adoptedPetSlice";
+import searchParams from "./searchParamsSlice";
 
 const store = configureStore({
   reducer: {
-    adoptedPetSlice,
+    adoptedPet,
+    searchParams,
   },
 });
 
